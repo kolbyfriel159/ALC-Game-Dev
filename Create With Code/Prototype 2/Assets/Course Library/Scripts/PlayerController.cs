@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public float horizontalInput;
-    public float verticalInput;
+    //public float verticalInput;
     public float speed = 10f;
     public float xRange = 10.0f;
 
@@ -29,10 +29,10 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
         horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
+        //verticalInput = Input.GetAxis("Vertical");
 
         transform.Translate(Vector3.right * Time.deltaTime * horizontalInput * speed);
-        transform.Translate(Vector3.forward * Time.deltaTime * verticalInput * speed);
+        //transform.Translate(Vector3.forward * Time.deltaTime * verticalInput * speed);
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
