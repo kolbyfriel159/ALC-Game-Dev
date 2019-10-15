@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: -8411534839860872899}
   - component: {fileID: 7493619259083873193}
   - component: {fileID: -3918331333744433606}
+  - component: {fileID: -209175197470507147}
+  - component: {fileID: -5259697915961479585}
+  - component: {fileID: -4469213774046032884}
   m_Layer: 0
   m_Name: Food_Organic_Pear_02
   m_TagString: Untagged
@@ -122,3 +125,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBound: 30
   lowerBound: -10
+--- !u!65 &-209175197470507147
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4575013143465626701}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.27469635, y: 0.4664595, z: 0.2746892}
+  m_Center: {x: 0, y: 0.23322976, z: 0}
+--- !u!54 &-5259697915961479585
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4575013143465626701}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &-4469213774046032884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4575013143465626701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6586dcdc4f3b64039826529d413d7fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

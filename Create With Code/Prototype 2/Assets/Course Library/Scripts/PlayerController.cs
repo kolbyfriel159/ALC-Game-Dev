@@ -8,13 +8,13 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     //public float verticalInput;
     public float speed = 10f;
-    public float xRange = 10.0f;
+    public float xRange = 20.0f;
 
     public GameObject projectilePrefab;
 
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -38,7 +38,9 @@ public class PlayerController : MonoBehaviour
         {
             //when the space bar is pressed down run this code
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
-            
+
         }
+
     }
+
 }

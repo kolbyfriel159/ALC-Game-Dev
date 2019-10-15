@@ -594,6 +594,8 @@ MonoBehaviour:
   - {fileID: 2789527709245465860, guid: fb1b11d5b9182411cbc907a5bea4b162, type: 3}
   - {fileID: 5791404092000982107, guid: 92961e6bed7134415be03d0e6788c479, type: 3}
   - {fileID: 6327468863416410146, guid: abb0f89d1df3d4c8ab3f0b91d78d1310, type: 3}
+  spawnDelay: 0.1
+  spawnInterval: 0.1
 --- !u!4 &1799854895
 Transform:
   m_ObjectHideFlags: 0
@@ -691,6 +693,12 @@ PrefabInstance:
       value: 1.281714
       objectReference: {fileID: 0}
     - target: {fileID: 6367468651943346246, guid: c864da364310f4bff84800f97e8430bc,
+        type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 4575013143465626701, guid: b4751772e19c6447fa671396b82ffba0,
+        type: 3}
+    - target: {fileID: 6367468652959048226, guid: c864da364310f4bff84800f97e8430bc,
         type: 3}
       propertyPath: projectilePrefab
       value: 
