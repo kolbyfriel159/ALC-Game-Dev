@@ -8,12 +8,14 @@ public class playerController : MonoBehaviour
     public float jumpForce;
     public float gravityModifier;
     public bool isOnGround = true;
-    private bool gameOver = false;
+    public bool gameOver = false;
+    private Animator playerAnim;
 
     // Start is called before the first frame update
     void Start()
     {
             playerRb = GetComponent<Rigidbody>();
+        playerAnim = GetComponent<Animator>();
         // playerRb.AddForce(Vector3.up * 1000);
         Physics.gravity *= gravityModifier;
         
@@ -22,10 +24,12 @@ public class playerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isOnGround)
+
+        if(Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver)
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
+            playerAnim.SetTrigger("Jump_trig");
         }
 
     }
@@ -38,6 +42,8 @@ public class playerController : MonoBehaviour
         {
             Debug.Log("Game Over");
             gameOver = true;
+            playerAnim.SetBool("Death_b", true);
+            playerAnim.SetInteger("DeathType_int", 1);
         }
 
     }
